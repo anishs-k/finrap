@@ -1,0 +1,353 @@
+.tu-json-pdf-view .page-heading {
+  align-items: flex-end;
+}
+
+.tu-json-pdf-view .page-heading p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 8px 0 0;
+  color: #60728a;
+}
+
+.tu-json-pdf-panel {
+  overflow: hidden;
+  padding: 26px;
+  border: 1px solid #cfdee0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 20px 55px rgba(20, 54, 48, 0.08);
+}
+
+.tu-json-pdf-toolbar {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.tu-json-pdf-search {
+  display: flex;
+  width: min(680px, 100%);
+  min-height: 58px;
+  align-items: center;
+  gap: 13px;
+  padding: 0 20px;
+  border: 1px solid #d4e0e8;
+  border-radius: 18px;
+  color: #10233d;
+  background: #fff;
+}
+
+.tu-json-pdf-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: #10233d;
+  background: transparent;
+  font: inherit;
+}
+
+.tu-json-pdf-search input::placeholder {
+  color: #8ca1bd;
+}
+
+.tu-json-pdf-table-wrap {
+  overflow-x: auto;
+  border-top: 1px solid #e5ecef;
+}
+
+.tu-json-pdf-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #182943;
+}
+
+.tu-json-pdf-table th,
+.tu-json-pdf-table td {
+  padding: 17px 12px;
+  border-bottom: 1px solid #e6edf0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tu-json-pdf-table th {
+  color: #526a89;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tu-json-pdf-table td strong,
+.tu-json-pdf-table td small {
+  display: block;
+}
+
+.tu-json-pdf-table td small {
+  margin-top: 3px;
+  color: #71839c;
+}
+
+.tu-json-pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tu-json-pdf-action {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 14px;
+  border: 1px solid #079653;
+  border-radius: 12px;
+  color: #fff;
+  background: #079653;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tu-json-pdf-action.secondary {
+  color: #077d47;
+  background: #fff;
+}
+
+.tu-json-pdf-empty {
+  display: flex;
+  min-height: 270px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #71839c;
+  text-align: center;
+}
+
+.tu-json-pdf-empty strong {
+  color: #152640;
+  font-size: 19px;
+}
+
+.tu-json-pdf-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.tu-json-pdf-pagination button {
+  min-height: 40px;
+  padding: 0 15px;
+  border: 1px solid #cfe0d9;
+  border-radius: 12px;
+  color: #087f49;
+  background: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tu-json-pdf-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tu-json-pdf-error {
+  margin: 10px 0 16px;
+}
+
+.tu-json-pdf-modal-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(5, 14, 24, 0.68);
+  backdrop-filter: blur(8px);
+}
+
+.tu-json-pdf-modal {
+  width: min(780px, 100%);
+  max-height: calc(100vh - 44px);
+  overflow-y: auto;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.28);
+}
+
+.tu-json-pdf-modal > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px 28px 18px;
+  border-bottom: 1px solid #e4ecea;
+}
+
+.tu-json-pdf-modal h2 {
+  margin: 4px 0 0;
+  color: #0c1930;
+  font-size: 27px;
+}
+
+.tu-json-pdf-modal > header > button {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  color: #10233d;
+  background: #eef5f2;
+  cursor: pointer;
+}
+
+.tu-json-pdf-modal form {
+  display: grid;
+  gap: 18px;
+  padding: 24px 28px 28px;
+}
+
+.tu-json-pdf-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.tu-json-pdf-wide-field {
+  grid-column: 1 / -1;
+}
+
+.tu-json-pdf-modal label > span {
+  display: block;
+  margin-bottom: 9px;
+  color: #17314f;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.tu-json-pdf-modal label input:not([type="checkbox"]) {
+  width: 100%;
+  min-height: 54px;
+  border: 1px solid #d3dee6;
+  border-radius: 15px;
+  outline: 0;
+  padding: 0 16px;
+  color: #14243b;
+  background: #f9fbfc;
+  font: inherit;
+}
+
+.tu-json-pdf-modal label input:not([type="checkbox"]):focus {
+  border-color: #079653;
+  box-shadow: 0 0 0 4px rgba(7, 150, 83, 0.1);
+}
+
+.tu-json-pdf-modal .tu-json-pdf-consent {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 17px;
+  border: 1px solid #cfe0d9;
+  border-radius: 15px;
+  background: #f4faf7;
+  cursor: pointer;
+}
+
+.tu-json-pdf-modal .tu-json-pdf-consent input {
+  width: 19px;
+  height: 19px;
+  margin: 1px 0 0;
+  accent-color: #079653;
+  flex: 0 0 auto;
+}
+
+.tu-json-pdf-modal .tu-json-pdf-consent > span {
+  margin: 0;
+  color: #17314f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+@media (max-width: 760px) {
+  .tu-json-pdf-view .page-heading {
+    align-items: stretch;
+  }
+
+  .tu-json-pdf-view .page-heading .primary-button {
+    width: 100%;
+  }
+
+  .tu-json-pdf-panel {
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .tu-json-pdf-table,
+  .tu-json-pdf-table tbody,
+  .tu-json-pdf-table tr,
+  .tu-json-pdf-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .tu-json-pdf-table thead {
+    display: none;
+  }
+
+  .tu-json-pdf-table tr {
+    padding: 12px 0;
+    border-bottom: 1px solid #dfe9e5;
+  }
+
+  .tu-json-pdf-table td {
+    display: grid;
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 10px;
+    padding: 8px 4px;
+    border: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .tu-json-pdf-table td::before {
+    color: #637894;
+    content: attr(data-label);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tu-json-pdf-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tu-json-pdf-modal-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .tu-json-pdf-modal {
+    max-height: 94vh;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .tu-json-pdf-modal > header,
+  .tu-json-pdf-modal form {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .tu-json-pdf-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

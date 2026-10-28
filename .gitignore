@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build output
+dist/
+*/dist/
+build/
+*/build/
+
+# Environment files & Secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.env
+
+# Archives & Backups (contain embedded .env & secrets)
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Database dumps / recovery data
+db-recovery/
+*.dump
+*.sql
+*.sqlite
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript build info & caches
+*.tsbuildinfo
+.eslintcache
+
+# OS files
+.DS_Store
+Thumbs.db
